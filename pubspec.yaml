@@ -10,6 +10,7 @@ dependencies:
   get: 4.6.6
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.5.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -22,3 +23,8 @@ flutter:
   assets:
     - image/pp.jpeg
     - image/ig.png
+
+  fonts:
+    - family: Billabong
+      fonts:
+        - asset: fonts/Billabong.ttf
