@@ -6,6 +6,7 @@ import 'button_edit.dart';
 import 'column_image.dart';
 import 'expanded_icon.dart';
 import 'expanded_text.dart';
+import 'profile_picture.dart';
 
 class BodyListView extends StatelessWidget {
   const BodyListView({
@@ -21,37 +22,25 @@ class BodyListView extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Row(
+            const Row(
               children: <Widget>[
-                const SizedBox(
+                SizedBox(
                   width: 10,
                 ),
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 8),
-                    width: 80,
-                    height: 80,
-                    child: const CircleAvatar(
-                      backgroundImage: AssetImage("image/pp.jpeg"),
-                      minRadius: 15,
-                      maxRadius: 15,
-                    ),
-                  ),
-                ),
-                const ExpandedText(
+                ProfilePicture(),
+                ExpandedText(
                   textAngka: "20",
                   textHuruf: "Posts",
                   fontSizeAngka: 18,
                   fontSizeHuruf: 12,
                 ),
-                const ExpandedText(
+                ExpandedText(
                   textAngka: "99.M",
                   textHuruf: "Followers",
                   fontSizeAngka: 18,
                   fontSizeHuruf: 12,
                 ),
-                const ExpandedText(
+                ExpandedText(
                   textAngka: "1",
                   textHuruf: "Followings",
                   fontSizeAngka: 18,
@@ -96,55 +85,97 @@ class BodyListView extends StatelessWidget {
                         text: "Story 1",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
                       ),
                       ColumnImage(
                         text: "Story 2",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
                       ),
                       ColumnImage(
                         text: "Story 3",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
                       ),
                       ColumnImage(
                         text: "Story 4",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
                       ),
                       ColumnImage(
                         text: "Story 5",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
                       ),
                       ColumnImage(
                         text: "Story 6",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
                       ),
                       ColumnImage(
                         text: "Story 7",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
                       ),
                       ColumnImage(
                         text: "Story 8",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
                       ),
                       ColumnImage(
                         text: "Story 9",
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 18,
+                      ),
+                      ColumnImage(
+                        text: "Story 10",
+                      ),
+                      SizedBox(
+                        width: 18,
+                      ),
+                      ColumnImage(
+                        text: "Story 11",
+                      ),
+                      SizedBox(
+                        width: 18,
+                      ),
+                      ColumnImage(
+                        text: "Story 12",
+                      ),
+                      SizedBox(
+                        width: 18,
+                      ),
+                      ColumnImage(
+                        text: "Story 13",
+                      ),
+                      SizedBox(
+                        width: 18,
+                      ),
+                      ColumnImage(
+                        text: "Story 14",
+                      ),
+                      SizedBox(
+                        width: 18,
+                      ),
+                      ColumnImage(
+                        text: "Story 15",
+                      ),
+                      SizedBox(
+                        width: 18,
+                      ),
+                      ColumnImage(
+                        text: "Story 16",
+                      ),
+                      SizedBox(
+                        width: 18,
                       ),
                     ],
                   ),

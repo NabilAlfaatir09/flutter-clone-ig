@@ -11,7 +11,7 @@ class ButtonEdit extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 10),
-      width: 1500,
+      width: double.infinity,
       height: 32,
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(foregroundColor: ColorsName.white),

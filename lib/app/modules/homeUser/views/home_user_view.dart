@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_slicing_ui_instagram/app/modules/homeUser/widgets/circle_story.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:get/get.dart';
 
 import '../../../data/colors.dart';
 import '../controllers/home_user_controller.dart';
+import '../widgets/appbar_icon.dart';
+import '../widgets/appbar_title.dart';
+import '../widgets/column_story.dart';
 
 class HomeUserView extends GetView<HomeUserController> {
   const HomeUserView({Key? key}) : super(key: key);
@@ -14,274 +18,128 @@ class HomeUserView extends GetView<HomeUserController> {
       appBar: AppBar(
         backgroundColor: ColorsName.transparant,
         shadowColor: ColorsName.transparant,
-        title: Text(
-          "Instagram",
-          style: TextStyle(
-            color: ColorsName.black,
-            fontSize: 30,
-            fontFamily: "Billabong",
-            fontWeight: FontWeight.w500,
+        title: const AppbarTitle(),
+        actions: const [
+          AppbarIcon(
+            paddingRight: 25,
+            fontAwesomeIcons: FontAwesomeIcons.heart,
           ),
-        ),
-        actions: [
-          IconButton(
-            padding: const EdgeInsets.only(right: 25),
-            splashColor: ColorsName.transparant,
-            hoverColor: ColorsName.transparant,
-            highlightColor: ColorsName.transparant,
-            onPressed: () {},
-            icon: FaIcon(
-              FontAwesomeIcons.heart,
-              size: 22,
-              color: ColorsName.black,
-            ),
+          AppbarIcon(
+            paddingRight: 20,
+            fontAwesomeIcons: FontAwesomeIcons.facebookMessenger,
           ),
-          IconButton(
-            padding: const EdgeInsets.only(right: 20),
-            splashColor: ColorsName.transparant,
-            hoverColor: ColorsName.transparant,
-            highlightColor: ColorsName.transparant,
-            onPressed: () {},
-            icon: FaIcon(
-              FontAwesomeIcons.facebookMessenger,
-              size: 22,
-              color: ColorsName.black,
-            ),
-          )
         ],
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
+            const SizedBox(
+              height: 10,
+            ),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8),
-              child: SingleChildScrollView(
+              decoration: BoxDecoration(
+                  border: Border(
+                      bottom: BorderSide(width: 1, color: Colors.grey[300]!))),
+              child: const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 8),
-                      padding: const EdgeInsets.all(2),
-                      width: 70,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [ColorsName.gradient1, ColorsName.gradient2],
-                        ),
-                        borderRadius: BorderRadiusDirectional.circular(50),
-                      ),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: ColorsName.white,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: const CircleAvatar(
-                          backgroundImage: AssetImage("image/pp.jpeg"),
-                        ),
-                      ),
-                    ),
+                    ColumnStory(text: "Cerita Anda"),
+                    ColumnStory(text: "Cerita 1"),
+                    ColumnStory(text: "Cerita 2"),
+                    ColumnStory(text: "Cerita 3"),
+                    ColumnStory(text: "Cerita 4"),
+                    ColumnStory(text: "Cerita 5"),
+                    ColumnStory(text: "Cerita 6"),
+                    ColumnStory(text: "Cerita 7"),
+                    ColumnStory(text: "Cerita 8"),
+                    ColumnStory(text: "Cerita 9"),
+                    ColumnStory(text: "Cerita 10"),
+                    ColumnStory(text: "Cerita 11"),
+                    ColumnStory(text: "Cerita 12"),
+                    ColumnStory(text: "Cerita 13"),
+                    ColumnStory(text: "Cerita 14"),
+                    ColumnStory(text: "Cerita 15"),
                   ],
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            Row(
+              children: [
+                const CircleStory(
+                  width: 35,
+                  height: 35,
+                  margin: 7,
+                ),
+                Text(
+                  "nabil alfaatir",
+                  style: TextStyle(
+                      color: ColorsName.black,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  width: 3,
+                ),
+                Image.asset(
+                  "image/ig.png",
+                  fit: BoxFit.cover,
+                  width: 15,
+                  height: 15,
+                ),
+                const Spacer(),
+                Container(
+                  margin: const EdgeInsets.only(right: 20),
+                  child: FaIcon(
+                    FontAwesomeIcons.ellipsisVertical,
+                    color: ColorsName.black,
+                    size: 15,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            Image.asset(
+              "image/pp.jpeg",
+              fit: BoxFit.cover,
+              width: double.infinity,
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(left: 10, right: 16),
+                  child: FaIcon(
+                    FontAwesomeIcons.heart,
+                    size: 22,
+                    color: ColorsName.black,
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(right: 16),
+                  child: Image.asset(
+                    "image/comment.png",
+                    width: 20,
+                    height: 20,
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(right: 16),
+                  child: Image.asset(
+                    "image/plane.png",
+                    width: 20,
+                    height: 20,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
