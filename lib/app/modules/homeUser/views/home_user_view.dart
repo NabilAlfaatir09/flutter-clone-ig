@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_slicing_ui_instagram/app/modules/homeUser/widgets/circle_story.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:get/get.dart';
@@ -8,7 +7,13 @@ import '../../../data/colors.dart';
 import '../controllers/home_user_controller.dart';
 import '../widgets/appbar_icon.dart';
 import '../widgets/appbar_title.dart';
+import '../widgets/circle_story.dart';
 import '../widgets/column_story.dart';
+import '../widgets/container_icon.dart';
+import '../widgets/container_image_icon.dart';
+import '../widgets/container_like_text.dart';
+import '../widgets/container_text_post.dart';
+import '../widgets/image_post.dart';
 
 class HomeUserView extends GetView<HomeUserController> {
   const HomeUserView({Key? key}) : super(key: key);
@@ -75,12 +80,9 @@ class HomeUserView extends GetView<HomeUserController> {
                   height: 35,
                   margin: 7,
                 ),
-                Text(
-                  "nabil alfaatir",
-                  style: TextStyle(
-                      color: ColorsName.black,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold),
+                const Text(
+                  "nabil_alftr09",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
                   width: 3,
@@ -105,42 +107,693 @@ class HomeUserView extends GetView<HomeUserController> {
             const SizedBox(
               height: 5,
             ),
-            Image.asset(
-              "image/pp.jpeg",
-              fit: BoxFit.cover,
-              width: double.infinity,
-            ),
+            const ImagePost(),
             const SizedBox(
               height: 5,
             ),
+            const Row(
+              children: [
+                ContainerIcon(
+                  left: 10,
+                  right: 16,
+                  size: 22,
+                  iconData: FontAwesomeIcons.heart,
+                ),
+                ContainerImageIcon(image: "image/comment.png"),
+                ContainerImageIcon(image: "image/plane.png"),
+                Spacer(),
+                ContainerIcon(
+                  left: 0,
+                  right: 16,
+                  size: 20,
+                  iconData: FontAwesomeIcons.ellipsis,
+                ),
+                Spacer(),
+                ContainerIcon(
+                  left: 60,
+                  right: 22,
+                  size: 20,
+                  iconData: FontAwesomeIcons.bookmark,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            const ContainerLikeText(),
+            const SizedBox(
+              height: 3,
+            ),
             Row(
               children: [
+                ContainerTextPost(
+                  text: "nabil_alftr09",
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: ColorsName.black,
+                  left: 10,
+                ),
+                ContainerTextPost(
+                  text:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean..",
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: ColorsName.black,
+                  left: 5,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            ContainerTextPost(
+              text: "10 menit yang lalu",
+              fontSize: 11,
+              fontWeight: FontWeight.normal,
+              color: ColorsName.grey700!,
+              left: 10,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                const CircleStory(
+                  width: 35,
+                  height: 35,
+                  margin: 7,
+                ),
+                const Text(
+                  "nabil_alftr09",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  width: 3,
+                ),
+                Image.asset(
+                  "image/ig.png",
+                  fit: BoxFit.cover,
+                  width: 15,
+                  height: 15,
+                ),
+                const Spacer(),
                 Container(
-                  margin: const EdgeInsets.only(left: 10, right: 16),
+                  margin: const EdgeInsets.only(right: 20),
                   child: FaIcon(
-                    FontAwesomeIcons.heart,
-                    size: 22,
+                    FontAwesomeIcons.ellipsisVertical,
                     color: ColorsName.black,
-                  ),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(right: 16),
-                  child: Image.asset(
-                    "image/comment.png",
-                    width: 20,
-                    height: 20,
-                  ),
-                ),
-                Container(
-                  margin: const EdgeInsets.only(right: 16),
-                  child: Image.asset(
-                    "image/plane.png",
-                    width: 20,
-                    height: 20,
+                    size: 15,
                   ),
                 ),
               ],
             ),
+            const SizedBox(
+              height: 5,
+            ),
+            const ImagePost(),
+            const SizedBox(
+              height: 5,
+            ),
+            const Row(
+              children: [
+                ContainerIcon(
+                  left: 10,
+                  right: 16,
+                  size: 22,
+                  iconData: FontAwesomeIcons.heart,
+                ),
+                ContainerImageIcon(image: "image/comment.png"),
+                ContainerImageIcon(image: "image/plane.png"),
+                Spacer(),
+                ContainerIcon(
+                  left: 0,
+                  right: 16,
+                  size: 20,
+                  iconData: FontAwesomeIcons.ellipsis,
+                ),
+                Spacer(),
+                ContainerIcon(
+                  left: 60,
+                  right: 22,
+                  size: 20,
+                  iconData: FontAwesomeIcons.bookmark,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            const ContainerLikeText(),
+            const SizedBox(
+              height: 3,
+            ),
+            Row(
+              children: [
+                ContainerTextPost(
+                  text: "nabil_alftr09",
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: ColorsName.black,
+                  left: 10,
+                ),
+                ContainerTextPost(
+                  text:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean..",
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: ColorsName.black,
+                  left: 5,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            ContainerTextPost(
+              text: "10 menit yang lalu",
+              fontSize: 11,
+              fontWeight: FontWeight.normal,
+              color: ColorsName.grey700!,
+              left: 10,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                const CircleStory(
+                  width: 35,
+                  height: 35,
+                  margin: 7,
+                ),
+                const Text(
+                  "nabil_alftr09",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  width: 3,
+                ),
+                Image.asset(
+                  "image/ig.png",
+                  fit: BoxFit.cover,
+                  width: 15,
+                  height: 15,
+                ),
+                const Spacer(),
+                Container(
+                  margin: const EdgeInsets.only(right: 20),
+                  child: FaIcon(
+                    FontAwesomeIcons.ellipsisVertical,
+                    color: ColorsName.black,
+                    size: 15,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            const ImagePost(),
+            const SizedBox(
+              height: 5,
+            ),
+            const Row(
+              children: [
+                ContainerIcon(
+                  left: 10,
+                  right: 16,
+                  size: 22,
+                  iconData: FontAwesomeIcons.heart,
+                ),
+                ContainerImageIcon(image: "image/comment.png"),
+                ContainerImageIcon(image: "image/plane.png"),
+                Spacer(),
+                ContainerIcon(
+                  left: 0,
+                  right: 16,
+                  size: 20,
+                  iconData: FontAwesomeIcons.ellipsis,
+                ),
+                Spacer(),
+                ContainerIcon(
+                  left: 60,
+                  right: 22,
+                  size: 20,
+                  iconData: FontAwesomeIcons.bookmark,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            const ContainerLikeText(),
+            const SizedBox(
+              height: 3,
+            ),
+            Row(
+              children: [
+                ContainerTextPost(
+                  text: "nabil_alftr09",
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: ColorsName.black,
+                  left: 10,
+                ),
+                ContainerTextPost(
+                  text:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean..",
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: ColorsName.black,
+                  left: 5,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            ContainerTextPost(
+              text: "10 menit yang lalu",
+              fontSize: 11,
+              fontWeight: FontWeight.normal,
+              color: ColorsName.grey700!,
+              left: 10,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                const CircleStory(
+                  width: 35,
+                  height: 35,
+                  margin: 7,
+                ),
+                const Text(
+                  "nabil_alftr09",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  width: 3,
+                ),
+                Image.asset(
+                  "image/ig.png",
+                  fit: BoxFit.cover,
+                  width: 15,
+                  height: 15,
+                ),
+                const Spacer(),
+                Container(
+                  margin: const EdgeInsets.only(right: 20),
+                  child: FaIcon(
+                    FontAwesomeIcons.ellipsisVertical,
+                    color: ColorsName.black,
+                    size: 15,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            const ImagePost(),
+            const SizedBox(
+              height: 5,
+            ),
+            const Row(
+              children: [
+                ContainerIcon(
+                  left: 10,
+                  right: 16,
+                  size: 22,
+                  iconData: FontAwesomeIcons.heart,
+                ),
+                ContainerImageIcon(image: "image/comment.png"),
+                ContainerImageIcon(image: "image/plane.png"),
+                Spacer(),
+                ContainerIcon(
+                  left: 0,
+                  right: 16,
+                  size: 20,
+                  iconData: FontAwesomeIcons.ellipsis,
+                ),
+                Spacer(),
+                ContainerIcon(
+                  left: 60,
+                  right: 22,
+                  size: 20,
+                  iconData: FontAwesomeIcons.bookmark,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            const ContainerLikeText(),
+            const SizedBox(
+              height: 3,
+            ),
+            Row(
+              children: [
+                ContainerTextPost(
+                  text: "nabil_alftr09",
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: ColorsName.black,
+                  left: 10,
+                ),
+                ContainerTextPost(
+                  text:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean..",
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: ColorsName.black,
+                  left: 5,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            ContainerTextPost(
+              text: "10 menit yang lalu",
+              fontSize: 11,
+              fontWeight: FontWeight.normal,
+              color: ColorsName.grey700!,
+              left: 10,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                const CircleStory(
+                  width: 35,
+                  height: 35,
+                  margin: 7,
+                ),
+                const Text(
+                  "nabil_alftr09",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  width: 3,
+                ),
+                Image.asset(
+                  "image/ig.png",
+                  fit: BoxFit.cover,
+                  width: 15,
+                  height: 15,
+                ),
+                const Spacer(),
+                Container(
+                  margin: const EdgeInsets.only(right: 20),
+                  child: FaIcon(
+                    FontAwesomeIcons.ellipsisVertical,
+                    color: ColorsName.black,
+                    size: 15,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            const ImagePost(),
+            const SizedBox(
+              height: 5,
+            ),
+            const Row(
+              children: [
+                ContainerIcon(
+                  left: 10,
+                  right: 16,
+                  size: 22,
+                  iconData: FontAwesomeIcons.heart,
+                ),
+                ContainerImageIcon(image: "image/comment.png"),
+                ContainerImageIcon(image: "image/plane.png"),
+                Spacer(),
+                ContainerIcon(
+                  left: 0,
+                  right: 16,
+                  size: 20,
+                  iconData: FontAwesomeIcons.ellipsis,
+                ),
+                Spacer(),
+                ContainerIcon(
+                  left: 60,
+                  right: 22,
+                  size: 20,
+                  iconData: FontAwesomeIcons.bookmark,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            const ContainerLikeText(),
+            const SizedBox(
+              height: 3,
+            ),
+            Row(
+              children: [
+                ContainerTextPost(
+                  text: "nabil_alftr09",
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: ColorsName.black,
+                  left: 10,
+                ),
+                ContainerTextPost(
+                  text:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean..",
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: ColorsName.black,
+                  left: 5,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            ContainerTextPost(
+              text: "10 menit yang lalu",
+              fontSize: 11,
+              fontWeight: FontWeight.normal,
+              color: ColorsName.grey700!,
+              left: 10,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                const CircleStory(
+                  width: 35,
+                  height: 35,
+                  margin: 7,
+                ),
+                const Text(
+                  "nabil_alftr09",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  width: 3,
+                ),
+                Image.asset(
+                  "image/ig.png",
+                  fit: BoxFit.cover,
+                  width: 15,
+                  height: 15,
+                ),
+                const Spacer(),
+                Container(
+                  margin: const EdgeInsets.only(right: 20),
+                  child: FaIcon(
+                    FontAwesomeIcons.ellipsisVertical,
+                    color: ColorsName.black,
+                    size: 15,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            const ImagePost(),
+            const SizedBox(
+              height: 5,
+            ),
+            const Row(
+              children: [
+                ContainerIcon(
+                  left: 10,
+                  right: 16,
+                  size: 22,
+                  iconData: FontAwesomeIcons.heart,
+                ),
+                ContainerImageIcon(image: "image/comment.png"),
+                ContainerImageIcon(image: "image/plane.png"),
+                Spacer(),
+                ContainerIcon(
+                  left: 0,
+                  right: 16,
+                  size: 20,
+                  iconData: FontAwesomeIcons.ellipsis,
+                ),
+                Spacer(),
+                ContainerIcon(
+                  left: 60,
+                  right: 22,
+                  size: 20,
+                  iconData: FontAwesomeIcons.bookmark,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            const ContainerLikeText(),
+            const SizedBox(
+              height: 3,
+            ),
+            Row(
+              children: [
+                ContainerTextPost(
+                  text: "nabil_alftr09",
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: ColorsName.black,
+                  left: 10,
+                ),
+                ContainerTextPost(
+                  text:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean..",
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: ColorsName.black,
+                  left: 5,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            ContainerTextPost(
+              text: "10 menit yang lalu",
+              fontSize: 11,
+              fontWeight: FontWeight.normal,
+              color: ColorsName.grey700!,
+              left: 10,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                const CircleStory(
+                  width: 35,
+                  height: 35,
+                  margin: 7,
+                ),
+                const Text(
+                  "nabil_alftr09",
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  width: 3,
+                ),
+                Image.asset(
+                  "image/ig.png",
+                  fit: BoxFit.cover,
+                  width: 15,
+                  height: 15,
+                ),
+                const Spacer(),
+                Container(
+                  margin: const EdgeInsets.only(right: 20),
+                  child: FaIcon(
+                    FontAwesomeIcons.ellipsisVertical,
+                    color: ColorsName.black,
+                    size: 15,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 5,
+            ),
+            const ImagePost(),
+            const SizedBox(
+              height: 5,
+            ),
+            const Row(
+              children: [
+                ContainerIcon(
+                  left: 10,
+                  right: 16,
+                  size: 22,
+                  iconData: FontAwesomeIcons.heart,
+                ),
+                ContainerImageIcon(image: "image/comment.png"),
+                ContainerImageIcon(image: "image/plane.png"),
+                Spacer(),
+                ContainerIcon(
+                  left: 0,
+                  right: 16,
+                  size: 20,
+                  iconData: FontAwesomeIcons.ellipsis,
+                ),
+                Spacer(),
+                ContainerIcon(
+                  left: 60,
+                  right: 22,
+                  size: 20,
+                  iconData: FontAwesomeIcons.bookmark,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            const ContainerLikeText(),
+            const SizedBox(
+              height: 3,
+            ),
+            Row(
+              children: [
+                ContainerTextPost(
+                  text: "nabil_alftr09",
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: ColorsName.black,
+                  left: 10,
+                ),
+                ContainerTextPost(
+                  text:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean..",
+                  fontSize: 13,
+                  fontWeight: FontWeight.w400,
+                  color: ColorsName.black,
+                  left: 5,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            ContainerTextPost(
+              text: "10 menit yang lalu",
+              fontSize: 11,
+              fontWeight: FontWeight.normal,
+              color: ColorsName.grey700!,
+              left: 10,
+            ),
+            const SizedBox(
+              height: 10,
+            )
           ],
         ),
       ),
