@@ -1,11 +1,11 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_slicing_ui_instagram/app/modules/homeUser/views/home_user_view.dart';
-import 'package:flutter_slicing_ui_instagram/app/modules/profileUser/views/profile_user_view.dart';
 import 'package:get/get.dart';
 
+import '../../exploreUser/views/explore_user_view.dart';
+import '../../homeUser/views/home_user_view.dart';
+import '../../profileUser/views/profile_user_view.dart';
 import '../widgets/reels_user.dart';
 import '../widgets/post_user.dart';
-import '../widgets/explore_user.dart';
 
 class HomeController extends GetxController {
   var currentIndex = 0.obs;
@@ -16,7 +16,7 @@ class HomeController extends GetxController {
 
   List<Widget> myWidget = [
     const HomeUserView(),
-    const ExploreUser(),
+    const ExploreUserView(),
     const PostUser(),
     const ReelsUser(),
     const ProfileUserView(),

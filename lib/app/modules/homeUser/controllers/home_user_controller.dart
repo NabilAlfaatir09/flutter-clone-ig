@@ -1,23 +1,7 @@
 import 'package:get/get.dart';
 
 class HomeUserController extends GetxController {
-  //TODO: Implement HomeUserController
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
+  var likePost = false.obs;
+  var savePost = false.obs;
+  void getNotifSavePost() {}
 }

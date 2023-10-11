@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/exploreUser/bindings/explore_user_binding.dart';
+import '../modules/exploreUser/views/explore_user_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/homeUser/bindings/home_user_binding.dart';
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.PROFILE_USER,
       page: () => const ProfileUserView(),
       binding: ProfileUserBinding(),
+    ),
+    GetPage(
+      name: _Paths.EXPLORE_USER,
+      page: () => const ExploreUserView(),
+      binding: ExploreUserBinding(),
     ),
   ];
 }
