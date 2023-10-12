@@ -1,4 +1,4 @@
-# flutter_slicing_ui_instagram
+# flutter_clone_ui_instagram
 
 A new Flutter project.
 
