@@ -29,7 +29,7 @@ class HomeUserView extends GetView<HomeUserController> {
           ),
         ],
       ),
-      body: SingleChild(),
+      body: SafeArea(child: SingleChild()),
     );
   }
 }

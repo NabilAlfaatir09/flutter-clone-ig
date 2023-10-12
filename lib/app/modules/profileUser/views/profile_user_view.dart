@@ -26,7 +26,7 @@ class ProfileUserView extends GetView<ProfileUserController> {
           ),
         ],
       ),
-      body: const BodyListView(),
+      body: const SafeArea(child: BodyListView()),
     );
   }
 }

@@ -5,9 +5,9 @@ import 'package:get/get.dart';
 
 import '../../../data/colors.dart';
 import '../controllers/home_user_controller.dart';
-import 'column_bottom_sheet_logo.dart';
 import 'column_story.dart';
 import 'circle_story.dart';
+import 'container_bottom_sheet.dart';
 import 'container_icon.dart';
 import 'container_image_icon.dart';
 import 'container_like_text.dart';
@@ -82,40 +82,17 @@ class SingleChild extends StatelessWidget {
               ),
               const Spacer(),
               InkWell(
+                autofocus: true,
+                focusColor: ColorsName.white,
+                hoverColor: ColorsName.white,
+                highlightColor: ColorsName.white,
+                splashColor: ColorsName.white,
                 onTap: () {
+                  const ScrollBehavior(
+                      androidOverscrollIndicator:
+                          AndroidOverscrollIndicator.glow);
                   Get.bottomSheet(
-                    Container(
-                        height: 700,
-                        color: ColorsName.white,
-                        child: Column(
-                          children: [
-                            Center(
-                              child: Container(
-                                margin:
-                                    const EdgeInsets.only(top: 10, bottom: 30),
-                                width: 43,
-                                height: 4,
-                                decoration: BoxDecoration(
-                                  color: ColorsName.grey700,
-                                  borderRadius: BorderRadius.circular(4),
-                                ),
-                              ),
-                            ),
-                            const Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                ColumnLogoBottomSheet(
-                                  iconData: FontAwesomeIcons.bookmark,
-                                  text: "Simpan",
-                                ),
-                                ColumnLogoBottomSheet(
-                                  iconData: FontAwesomeIcons.qrcode,
-                                  text: "Kode QR",
-                                ),
-                              ],
-                            ),
-                          ],
-                        )),
+                    ListView(children: const [ContainerBottomSheet()]),
                     isDismissible: true,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(35),
@@ -215,7 +192,7 @@ class SingleChild extends StatelessWidget {
                     },
                     child: (controll.savePost.value)
                         ? ContainerIcon(
-                            size: 24,
+                            size: 21,
                             iconData: Icons.bookmark,
                             left: 58,
                             right: 18,

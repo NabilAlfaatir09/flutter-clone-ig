@@ -17,8 +17,8 @@ class ColumnLogoBottomSheet extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 50,
-          height: 50,
+          width: 60,
+          height: 60,
           decoration: BoxDecoration(
               border: Border.all(color: ColorsName.black),
               shape: BoxShape.circle),
