@@ -4,17 +4,20 @@ import '../../../data/colors.dart';
 import 'circle_story.dart';
 
 class ColumnStory extends StatelessWidget {
+  final AssetImage assetImage;
   final String text;
   const ColumnStory({
     super.key,
     required this.text,
+    required this.assetImage,
   });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const CircleStory(
+        CircleStory(
+          assetImage: assetImage,
           width: 75,
           height: 75,
           margin: 4,

@@ -22,19 +22,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - image/pp.jpeg
-    - image/ig.png
-    - image/plane.png
-    - image/comment.png
-    - image/add.png
-    - image/reels.png
-    - image/redHeart.png
-    - image/lambo1.jpg
-    - image/lambo2.png
-    - image/astro.jpg
-    - image/apo.jpg
-    - image/spider.jpg
-    - image/sword.png
+    - image/
 
   fonts:
     - family: Billabong

@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import '../../../data/colors.dart';
 
 class CircleStory extends StatelessWidget {
+  final AssetImage assetImage;
   final double width, height, margin;
   const CircleStory({
     super.key,
     required this.width,
     required this.height,
     required this.margin,
+    required this.assetImage,
   });
 
   @override
@@ -30,8 +32,8 @@ class CircleStory extends StatelessWidget {
           color: ColorsName.white,
           borderRadius: BorderRadius.circular(50),
         ),
-        child: const CircleAvatar(
-          backgroundImage: AssetImage("image/pp.jpeg"),
+        child: CircleAvatar(
+          backgroundImage: assetImage,
         ),
       ),
     );
