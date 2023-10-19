@@ -6,10 +6,12 @@ import '../../../data/colors.dart';
 class AppbarIcon extends StatelessWidget {
   final double paddingRight;
   final IconData fontAwesomeIcons;
+  final Function() function;
   const AppbarIcon({
     super.key,
     required this.fontAwesomeIcons,
     required this.paddingRight,
+    required this.function,
   });
 
   @override
@@ -19,7 +21,7 @@ class AppbarIcon extends StatelessWidget {
       splashColor: ColorsName.transparant,
       hoverColor: ColorsName.transparant,
       highlightColor: ColorsName.transparant,
-      onPressed: () {},
+      onPressed: function,
       icon: FaIcon(
         fontAwesomeIcons,
         size: 22,

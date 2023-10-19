@@ -7,6 +7,7 @@ abstract class Routes {
   static const HOME_USER = _Paths.HOME_USER;
   static const PROFILE_USER = _Paths.PROFILE_USER;
   static const EXPLORE_USER = _Paths.EXPLORE_USER;
+  static const MESENGGER = _Paths.MESENGGER;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const HOME_USER = '/home-user';
   static const PROFILE_USER = '/profile-user';
   static const EXPLORE_USER = '/explore-user';
+  static const MESENGGER = '/mesengger';
 }

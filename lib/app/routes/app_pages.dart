@@ -6,6 +6,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/homeUser/bindings/home_user_binding.dart';
 import '../modules/homeUser/views/home_user_view.dart';
+import '../modules/mesengger/bindings/mesengger_binding.dart';
+import '../modules/mesengger/views/mesengger_view.dart';
 import '../modules/profileUser/bindings/profile_user_binding.dart';
 import '../modules/profileUser/views/profile_user_view.dart';
 
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.EXPLORE_USER,
       page: () => const ExploreUserView(),
       binding: ExploreUserBinding(),
+    ),
+    GetPage(
+      name: _Paths.MESENGGER,
+      page: () => const MesenggerView(),
+      binding: MesenggerBinding(),
     ),
   ];
 }

@@ -10,4 +10,6 @@ class ColorsName {
   static Color gradient1 = const Color(0XFFF7A34B);
   static Color gradient2 = const Color(0XFFDE0046);
   static Color red = const Color.fromARGB(255, 234, 36, 21);
+  static Color blue = Colors.blue;
+  static Color bluemuda = const Color.fromARGB(255, 202, 229, 255);
 }

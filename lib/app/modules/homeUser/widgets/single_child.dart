@@ -175,9 +175,9 @@ class SingleChild extends StatelessWidget {
                   highlightColor: ColorsName.white,
                   splashColor: ColorsName.white,
                   onTap: () {
-                    controll.likePost.value = !controll.likePost.value;
+                    controll.likePost1.value = !controll.likePost1.value;
                   },
-                  child: (controll.likePost.value)
+                  child: (controll.likePost1.value)
                       ? ContainerIcon(
                           size: 22,
                           iconData: Icons.favorite_rounded,
@@ -215,13 +215,13 @@ class SingleChild extends StatelessWidget {
                     splashColor: ColorsName.white,
                     highlightColor: ColorsName.white,
                     onTap: () {
-                      controll.savePost.value = !controll.savePost.value;
-                      (controll.savePost.value)
+                      controll.savePost1.value = !controll.savePost1.value;
+                      (controll.savePost1.value)
                           ? Get.snackbar("Success", "Berhasil ditambahkan",
                               duration: const Duration(seconds: 1))
                           : null;
                     },
-                    child: (controll.savePost.value)
+                    child: (controll.savePost1.value)
                         ? ContainerIcon(
                             size: 21,
                             iconData: Icons.bookmark,
@@ -239,7 +239,7 @@ class SingleChild extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 8,
+            height: 10,
           ),
           const ContainerLikeText(),
           const SizedBox(
@@ -361,9 +361,9 @@ class SingleChild extends StatelessWidget {
                   highlightColor: ColorsName.white,
                   splashColor: ColorsName.white,
                   onTap: () {
-                    controll.likePost.value = !controll.likePost.value;
+                    controll.likePost2.value = !controll.likePost2.value;
                   },
-                  child: (controll.likePost.value)
+                  child: (controll.likePost2.value)
                       ? ContainerIcon(
                           size: 22,
                           iconData: Icons.favorite_rounded,
@@ -401,13 +401,13 @@ class SingleChild extends StatelessWidget {
                     splashColor: ColorsName.white,
                     highlightColor: ColorsName.white,
                     onTap: () {
-                      controll.savePost.value = !controll.savePost.value;
-                      (controll.savePost.value)
+                      controll.savePost2.value = !controll.savePost2.value;
+                      (controll.savePost2.value)
                           ? Get.snackbar("Success", "Berhasil ditambahkan",
                               duration: const Duration(seconds: 1))
                           : null;
                     },
-                    child: (controll.savePost.value)
+                    child: (controll.savePost2.value)
                         ? ContainerIcon(
                             size: 21,
                             iconData: Icons.bookmark,
@@ -425,7 +425,7 @@ class SingleChild extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 8,
+            height: 10,
           ),
           const ContainerLikeText(),
           const SizedBox(
@@ -547,9 +547,9 @@ class SingleChild extends StatelessWidget {
                   highlightColor: ColorsName.white,
                   splashColor: ColorsName.white,
                   onTap: () {
-                    controll.likePost.value = !controll.likePost.value;
+                    controll.likePost3.value = !controll.likePost3.value;
                   },
-                  child: (controll.likePost.value)
+                  child: (controll.likePost3.value)
                       ? ContainerIcon(
                           size: 22,
                           iconData: Icons.favorite_rounded,
@@ -587,13 +587,13 @@ class SingleChild extends StatelessWidget {
                     splashColor: ColorsName.white,
                     highlightColor: ColorsName.white,
                     onTap: () {
-                      controll.savePost.value = !controll.savePost.value;
-                      (controll.savePost.value)
+                      controll.savePost3.value = !controll.savePost3.value;
+                      (controll.savePost3.value)
                           ? Get.snackbar("Success", "Berhasil ditambahkan",
                               duration: const Duration(seconds: 1))
                           : null;
                     },
-                    child: (controll.savePost.value)
+                    child: (controll.savePost3.value)
                         ? ContainerIcon(
                             size: 21,
                             iconData: Icons.bookmark,
@@ -611,7 +611,7 @@ class SingleChild extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 8,
+            height: 10,
           ),
           const ContainerLikeText(),
           const SizedBox(
@@ -732,9 +732,9 @@ class SingleChild extends StatelessWidget {
                   highlightColor: ColorsName.white,
                   splashColor: ColorsName.white,
                   onTap: () {
-                    controll.likePost.value = !controll.likePost.value;
+                    controll.likePost4.value = !controll.likePost4.value;
                   },
-                  child: (controll.likePost.value)
+                  child: (controll.likePost4.value)
                       ? ContainerIcon(
                           size: 22,
                           iconData: Icons.favorite_rounded,
@@ -772,13 +772,13 @@ class SingleChild extends StatelessWidget {
                     splashColor: ColorsName.white,
                     highlightColor: ColorsName.white,
                     onTap: () {
-                      controll.savePost.value = !controll.savePost.value;
-                      (controll.savePost.value)
+                      controll.savePost4.value = !controll.savePost4.value;
+                      (controll.savePost4.value)
                           ? Get.snackbar("Success", "Berhasil ditambahkan",
                               duration: const Duration(seconds: 1))
                           : null;
                     },
-                    child: (controll.savePost.value)
+                    child: (controll.savePost4.value)
                         ? ContainerIcon(
                             size: 21,
                             iconData: Icons.bookmark,
@@ -796,7 +796,7 @@ class SingleChild extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 8,
+            height: 10,
           ),
           const ContainerLikeText(),
           const SizedBox(
@@ -920,9 +920,9 @@ class SingleChild extends StatelessWidget {
                   highlightColor: ColorsName.white,
                   splashColor: ColorsName.white,
                   onTap: () {
-                    controll.likePost.value = !controll.likePost.value;
+                    controll.likePost5.value = !controll.likePost5.value;
                   },
-                  child: (controll.likePost.value)
+                  child: (controll.likePost5.value)
                       ? ContainerIcon(
                           size: 22,
                           iconData: Icons.favorite_rounded,
@@ -960,13 +960,13 @@ class SingleChild extends StatelessWidget {
                     splashColor: ColorsName.white,
                     highlightColor: ColorsName.white,
                     onTap: () {
-                      controll.savePost.value = !controll.savePost.value;
-                      (controll.savePost.value)
+                      controll.savePost5.value = !controll.savePost5.value;
+                      (controll.savePost5.value)
                           ? Get.snackbar("Success", "Berhasil ditambahkan",
                               duration: const Duration(seconds: 1))
                           : null;
                     },
-                    child: (controll.savePost.value)
+                    child: (controll.savePost5.value)
                         ? ContainerIcon(
                             size: 21,
                             iconData: Icons.bookmark,
@@ -984,7 +984,7 @@ class SingleChild extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 8,
+            height: 10,
           ),
           const ContainerLikeText(),
           const SizedBox(
