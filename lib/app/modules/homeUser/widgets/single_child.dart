@@ -124,10 +124,6 @@ class SingleChild extends StatelessWidget {
                   Get.bottomSheet(
                     ListView(children: const [ContainerBottomSheet()]),
                     isDismissible: true,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(35),
-                    ),
-                    enableDrag: true,
                   );
                 },
                 child: Container(
