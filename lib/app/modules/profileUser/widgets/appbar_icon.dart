@@ -4,14 +4,19 @@ import '../../../data/colors.dart';
 
 class AppbarIcon extends StatelessWidget {
   final IconData icon;
-  const AppbarIcon({super.key, required this.icon});
+  final Function() function;
+  const AppbarIcon({
+    super.key,
+    required this.icon,
+    required this.function,
+  });
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
       splashColor: ColorsName.white,
       hoverColor: ColorsName.white,
-      onPressed: () {},
+      onPressed: function,
       icon: Icon(
         icon,
         size: 25,
